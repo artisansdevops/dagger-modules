@@ -25,7 +25,7 @@ import (
             from: "docker.io/composer:\(version)"
         }
         command: "composer install --ignore-platform-reqs --no-scripts"
-        mount: "/app": from: source
+        copy: "/app": from: source
         dir: "/app"
     }
 }
